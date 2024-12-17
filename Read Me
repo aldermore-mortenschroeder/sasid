@@ -1,0 +1,42 @@
+Instructions to connect GITHUB to SAS VIYA
+
+1.	go to https://github.com/settings/tokens/new
+  a.	name your token “VIYA ACCESS”
+  b.	tick all the boxes
+  c.	set expiry to no expiration
+  d.	 Generate token
+  e.	copy token (VERY IMPORTANT YOU WILL NOT BE ABLE TO FIND AGAIN)
+  f.	auth for SSO
+
+2.	Go to SAS Studio
+  a.	click options>Manage Git connections
+  b.	from the profiles tab select the + icon 
+  c.	ensure HTTPS is selected at the top
+  d.	give your profile a name (any is fine only for you)
+  e.	for user name and email use the email address you registered for GIT with
+  f.	for password use the token generated in 2e
+  g.	click ok
+  h.	select repositories in the left panel
+  i.	select the + icon
+  j.	select  clone a repository
+  k.	under repository enter: https://github.com/Aldermore-SAS-Users/SAS_GIT.git
+  l.	under Server selection choose /ALD/Files/GIT_Space/[Firstname_Lastname]
+  m.	click ok
+  n.	click clone
+  o.	click close
+
+
+
+
+Instructions for Admin to allow GIThub access (to be completed after user has created Github account and been added to to Security Group "GitHub SAS Admin" in GitHub Enterprise Organisation Unit prod AD”)
+•	Go to gihub
+•	Switch dashboard context to “Aldermore-SAS-Users” on the left hand side
+•	Click View organization
+•	Select people from the top bar
+•	Click “Invite Member”
+•	Enter Email Address (check MNF vs ALD)
+•	Click invite
+•	Select Member
+•	Click Send invitation
+
+                              
